@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blue Starfish Holiday Home - Taormina</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #faf7f2;
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    header {
+      text-align: center;
+      padding: 15px;
+      background-color: #fdfaf7;
+    }
+    header img {
+      max-width: 180px;
+    }
+    header h1 {
+      margin: 10px 0 0;
+      font-size: 1.8em;
+      color: #004466;
+    }
+    #intro {
+      text-align: center;
+      padding: 15px;
+    }
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin: 20px 0;
+    }
+    nav a {
+      display: block;
+      width: 80%;
+      max-width: 300px;
+      padding: 12px;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #004466;
+      border: 2px solid #004466;
+      border-radius: 25px;
+      background: white;
+      transition: background 0.3s, color 0.3s;
+    }
+    nav a:hover {
+      background: #004466;
+      color: white;
+    }
+    section {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #004466;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    .lang-toggle {
+      text-align: center;
+      margin: 15px 0;
+    }
+    .top-btn {
+      display: block;
+      margin: 20px auto 0;
+      padding: 8px 14px;
+      border-radius: 20px;
+      border: 1px solid #004466;
+      background: #fff;
+      color: #004466;
+      text-decoration: none;
+      width: fit-content;
+      transition: background 0.3s, color 0.3s;
+    }
+    .top-btn:hover {
+      background: #004466;
+      color: white;
+    }
+  </style>
+</head>
+<body id="top">
+  <header>
+    <img src="logo.png" alt="Blue Starfish Logo">
+    <h1>Blue Starfish Holiday Home</h1>
+    <div class="lang-toggle">
+      <button onclick="toggleLanguage()">🇮🇹 Italiano</button>
+    </div>
+  </header>
+
+  <div id="intro">
+    
+    <p data-lang="it"> Benvenuti a Taormina! Da qui potete scoprire cosa visitare, le spiagge più belle, i ristoranti consigliati e tanti consigli utili per vivere al meglio il vostro soggiorno.</p>  
+    <p data-lang="en" style="display:none;"> Welcome to Taormina! A guide curated by Blue Starfish Holiday Home to help you discover the best of the city. </p>
+      
+  </div>
+
+
+<nav data-lang="it">
+  <a href="#cosa-vedere" data-it="Cosa vedere">Cosa vedere</a>
+  <a href="#spiagge" data-it="Spiagge">Spiagge</a>
+  <a href="#ristoranti" data-it="Dove mangiare">Dove mangiare</a>
+  <a href="#mobilita" data-it="Mobilità">Mobilità</a>
+  <a href="#vicinanze" data-it="Nelle vicinanze">Nelle vicinanze</a>
+  <a href="#info" data-it="Informazioni">Informazioni</a> 
+  <a href="#contatti" data-it="Contatti" >Contatti</a>
+</nav>
+
+<nav data-lang="en" style="display:none;">
+  <a href="#cosa-vedere" data-en="What to see">What to see</a>
+  <a href="#spiagge" data-en="Beaches">Beaches</a>
+  <a href="#ristoranti" data-en="Restaurants">Restaurants</a>
+  <a href="#mobilita" data-en="Mobility">Mobility</a>
+  <a href="#vicinanze" data-en="Nearby">Nearby</a>
+  <a href="#info" data-en="Info">Info</a>
+  <a href="#contatti" data-en="Contacts">Contacts</a>
+</nav>
+
+<br>
+
+  <!-- COSA VEDERE -->
+
+<section id="cosa-vedere">
+  <h2 data-lang="it">🌟 Tour di Taormina – Itinerario a piedi nel centro storico</h2>
+  <h2 data-lang="en" style="display:none;">🌟 Taormina Tour – Walking Itinerary in the Historic Center</h2>
+
+  <p data-lang="it">
+    Taormina è uno dei gioielli più affascinanti della Sicilia, sospesa tra cielo e mare, ricca di storia, cultura e panorami mozzafiato. 
+    Ecco un itinerario consigliato per goderti il meglio della città in una giornata, partendo da Porta Catania, dove puoi lasciare comodamente l’auto nel parcheggio multipiano e accedere direttamente alla via principale: Corso Umberto I.
+  </p>
+  <p data-lang="en" style="display:none;">
+    Taormina is one of Sicily’s most fascinating gems, suspended between sky and sea, rich in history, culture, and breathtaking views. 
+    Here is a suggested itinerary to enjoy the best of the town in one day, starting from Porta Catania, where you can easily park in the multi-story car park and directly access the main street: Corso Umberto I.
+  </p>
+
+  <h3 data-lang="it">🏰 Porta Catania e Corso Umberto I</h3>
+  <h3 data-lang="en" style="display:none;">🏰 Porta Catania and Corso Umberto I</h3>
+  <p data-lang="it">
+    Appena entrato da Porta Catania, ti troverai immerso nella vivace atmosfera del centro storico. Subito sulla destra sorge la maestosa Cattedrale di San Nicola, costruita in epoca medievale, affacciata sulla pittoresca Piazza Duomo con la celebre fontana barocca del centauro, simbolo della città.
+  </p>
+  <p data-lang="en" style="display:none;">
+    As soon as you enter through Porta Catania, you will find yourself immersed in the lively atmosphere of the historic center. Immediately to the right stands the majestic Cathedral of San Nicola, built in the medieval period, facing the picturesque Piazza Duomo with its famous baroque fountain of the centaur, symbol of the city.
+  </p>
+
+  <h3 data-lang="it">⛪ Piazza IX Aprile – Il cuore panoramico di Taormina</h3>
+  <h3 data-lang="en" style="display:none;">⛪ Piazza IX Aprile – The Scenic Heart of Taormina</h3>
+  <p data-lang="it">
+    Proseguendo lungo il Corso, raggiungerai Piazza IX Aprile, il punto più iconico della città. Da qui potrai ammirare un panorama spettacolare sull’Etna, sul mare e sulla baia di Giardini Naxos. 
+    Nella piazza si affacciano la suggestiva Chiesa di San Giuseppe e l’antica Torre dell’Orologio, che segna l’ingresso al borgo medievale.
+  </p>
+  <p data-lang="en" style="display:none;">
+    Continuing along Corso Umberto, you will reach Piazza IX Aprile, the most iconic spot in town. From here you can admire breathtaking views of Mount Etna, the sea, and the bay of Giardini Naxos. 
+    The square is home to the charming Church of San Giuseppe and the ancient Clock Tower, marking the entrance to the medieval village.
+  </p>
+
+  <h3 data-lang="it">🏛️ Siti archeologici nascosti</h3>
+  <h3 data-lang="en" style="display:none;">🏛️ Hidden Archaeological Sites</h3>
+  <ul>
+    <li data-lang="it">Le Naumachie – resti di un’imponente struttura romana visibili liberamente lungo una viuzza del centro.</li>
+    <li data-lang="en" style="display:none;">The Naumachie – remains of a large Roman structure, freely accessible along a small street in the center.</li>
+
+    <li data-lang="it">L’Odeon Romano – un piccolo teatro nascosto dietro la Chiesa di Santa Caterina.</li>
+    <li data-lang="en" style="display:none;">The Roman Odeon – a small theatre hidden behind the Church of Santa Caterina.</li>
+  </ul>
+
+  <h3 data-lang="it">🏰 Palazzo Corvaja</h3>
+  <h3 data-lang="en" style="display:none;">🏰 Palazzo Corvaja</h3>
+  <p data-lang="it">
+    Splendido esempio di architettura medievale con influenze arabe, normanne e gotiche. Oggi ospita mostre e manifestazioni culturali.
+  </p>
+  <p data-lang="en" style="display:none;">
+    A splendid example of medieval architecture with Arab, Norman, and Gothic influences. Today it hosts exhibitions and cultural events.
+  </p>
+
+  <h3 data-lang="it">🎭 Teatro Greco</h3>
+  <h3 data-lang="en" style="display:none;">🎭 Greek Theatre</h3>
+  <p data-lang="it">
+    Monumento simbolo di Taormina. L’ingresso è a pagamento, ma lo spettacolo vale ogni centesimo: dall’arena si ammira l’Etna che domina il mare.
+  </p>
+  <p data-lang="en" style="display:none;">
+    The symbol of Taormina. Admission is ticketed, but the view is priceless: from the stage you can admire Mount Etna towering over the sea.
+  </p>
+
+  <h3 data-lang="it">🚶‍♂️ Passeggiata verso il Belvedere e Porta Messina</h3>
+  <h3 data-lang="en" style="display:none;">🚶‍♂️ Walk towards the Belvedere and Porta Messina</h3>
+  <p data-lang="it">
+    Concludi il tour passando da Porta Messina. Se hai ancora energie, prosegui su Via Pirandello fino al Belvedere, da cui si ammira l’Isola Bella e la costa ionica.
+  </p>
+  <p data-lang="en" style="display:none;">
+    End the tour at Porta Messina. If you still have energy, continue along Via Pirandello up to the Belvedere, with views over Isola Bella and the Ionian coast.
+  </p>
+
+  <h3 data-lang="it">🌳 Relax nella Villa Comunale</h3>
+  <h3 data-lang="en" style="display:none;">🌳 Relax at the Villa Comunale</h3>
+  <p data-lang="it">
+    Giardino panoramico con angoli ombreggiati, fiori tropicali e costruzioni pittoresche volute da Lady Florence Trevelyan. Raggiungibile a piedi dal Corso o in auto da via Roma.
+  </p>
+  <p data-lang="en" style="display:none;">
+    A panoramic garden with shaded corners, tropical flowers, and picturesque structures created by Lady Florence Trevelyan. Accessible on foot from Corso Umberto or by car from Via Roma.
+  </p>
+
+  <h3 data-lang="it">🌅 Panorami e siti extra</h3>
+  <h3 data-lang="en" style="display:none;">🌅 Extra Views and Sites</h3>
+  <ul>
+    <li data-lang="it"><b> Belvedere di via Pirandello</b> – vista incantevole su Isola Bella e Giardini Naxos.</li>
+    <li data-lang="en" style="display:none;">Belvedere on Via Pirandello – enchanting view over Isola Bella and Giardini Naxos.</li>
+
+    <li data-lang="it"><b> Casa Cuseni</b> – villa-museo storica con giardino terrazzato e interni Arts and Crafts, primo hotel per artisti in Europa.</li>
+    <li data-lang="en" style="display:none;">Casa Cuseni – historic villa-museum with terraced garden and Arts and Crafts interiors, the first artists’ hotel in Europe.</li>
+
+    <li data-lang="it"><b> Madonna della Rocca</b> – chiesetta scavata nella roccia sopra Taormina, lungo la strada per Castelmola.</li>
+    <li data-lang="en" style="display:none;">Madonna della Rocca – a small church carved into the rock above Taormina, on the way to Castelmola.</li>
+
+    <li data-lang="it"><b> Castello Saraceno</b> – antica fortificazione sopra il santuario della Madonna della Rocca.</li>
+    <li data-lang="en" style="display:none;">Saracen Castle – ancient fortress above the sanctuary of Madonna della Rocca.</li>
+  </ul>
+
+  <h3 data-lang="it">📌 Consigli </h3>
+  <h3 data-lang="en" style="display:none;">📌 Tips</h3>
+  <p data-lang="it">✨ Lasciati incuriosire dai vicoletti, dalle scalinate e dai dettagli nascosti: ogni angolo racconta una storia.</p>
+  <p data-lang="en" style="display:none;">✨ Let yourself be intrigued by alleys, stairways, and hidden details: every corner tells a story.</p>
+
+  <h3 data-lang="it">🔎 Se hai ancora voglia di esplorare</h3>
+  <h3 data-lang="en" style="display:none;">🔎 If You Still Want to Explore</h3>
+  <ul>
+    <li data-lang="it">🌿<b> Savoca </b>– Borgo medievale celebre per il film Il Padrino.</li>
+    <li data-lang="en" style="display:none;">🌿 Savoca – Medieval village famous for being a set of *The Godfather*.</li>
+
+    <li data-lang="it">🏖️<b> Letojanni </b>– Lunga spiaggia sabbiosa con stabilimenti e ristoranti.</li>
+    <li data-lang="en" style="display:none;">🏖️ Letojanni – Long sandy beach with beach clubs and restaurants.</li>
+
+    <li data-lang="it">🏰<b> Castelmola </b>– Borgo panoramico sopra Taormina, vista mozzafiato e Bar Turrisi.</li>
+    <li data-lang="en" style="display:none;">🏰 Castelmola – Panoramic village above Taormina, breathtaking view and quirky Bar Turrisi.</li>
+
+    <li data-lang="it">🌊<b> Giardini Naxos </b>– Prima colonia greca di Sicilia, oggi vivace località balneare.</li>
+    <li data-lang="en" style="display:none;">🌊 Giardini Naxos – First Greek colony in Sicily, now a lively seaside town.</li>
+
+    <li data-lang="it">🌋<b> Gole dell’Alcantara </b>– Canyon naturale scavato dal fiume nella roccia lavica.</li>
+    <li data-lang="en" style="display:none;">🌋 Alcantara Gorges – Natural canyon carved by the river into lava rock.</li>
+
+    <li data-lang="it">🌾<b> Francavilla di Sicilia </b>– Paese di collina nella Valle dell’Alcantara.</li>
+    <li data-lang="en" style="display:none;">🌾 Francavilla di Sicilia – Hill town in the Alcantara Valley.</li>
+
+    <li data-lang="it">🍇<b> Castiglione di Sicilia </b>– Borgo tra i più belli d’Italia, famoso per i vini dell’Etna.</li>
+    <li data-lang="en" style="display:none;">🍇 Castiglione di Sicilia – One of Italy’s most beautiful villages, famous for Etna wines.</li>
+
+    <li data-lang="it">🌋<b> Etna </b>– Vulcano attivo più alto d’Europa, escursioni guidate e panorami spettacolari.</li>
+    <li data-lang="en" style="display:none;">🌋 Etna – The highest active volcano in Europe, with guided tours and spectacular landscapes.</li>
+
+    <li data-lang="it">🏘️ <b> Paesi Etnei </b> – Borghi come Zafferana, Linguaglossa, Nicolosi e Milo.</li>
+    <li data-lang="en" style="display:none;">🏘️ Etna Villages – Towns such as Zafferana, Linguaglossa, Nicolosi, and Milo.</li>
+  </ul>
+  <a href="#top" class="top-btn" data-it="⬆️ Torna su" data-en="⬆️ Back to top">⬆️ Torna su</a>
+</section>
+<br>
+
+  <!-- SPIAGGE -->
+
+<section id="spiagge">
+  <h2 data-lang="it">🏖️ Il mare di Taormina</h2>
+  <h2 data-lang="en" style="display:none;">🏖️ The Sea of Taormina</h2>
+
+  <p data-lang="it">
+    Nessuna visita a Taormina è completa senza un tuffo nel suo mare cristallino! 
+    Ecco alcune spiagge consigliate (raggiungibili tramite funivia o beach bus - linea blu):
+  </p>
+  <p data-lang="en" style="display:none;">
+    No visit to Taormina is complete without a dip in its crystal-clear sea! 
+    Here are some recommended beaches (accessible by cable car or beach bus - blue line):
+  </p>
+
+  <ul>
+    <li data-lang="it">
+      🌴 <b>Isola Bella</b> – collegata alla terraferma da una sottile lingua di sabbia. Riserva naturale visitabile, ma la spiaggia è sassosa e scomoda, quindi meglio attrezzarsi.
+    </li>
+    <li data-lang="en" style="display:none;">
+      🌴 <b>Isola Bella</b> – connected to the mainland by a narrow strip of sand. A nature reserve open to visitors, but the beach is pebbly and not very comfortable, so it’s best to come prepared.
+    </li>
+
+    <li data-lang="it">
+      🏝️ <b>Spiaggia di Mazzarò</b> – raggiungibile dal centro tramite la funivia panoramica.
+    </li>
+    <li data-lang="en" style="display:none;">
+      🏝️ <b>Mazzarò Beach</b> – accessible from the town center via the panoramic cable car.
+    </li>
+
+    <li data-lang="it">
+      🌊 <b>Spisone</b> – una spiaggia di ghiaia e sabbia ampia e tranquilla, perfetta per rilassarsi.
+    </li>
+    <li data-lang="en" style="display:none;">
+      🌊 <b>Spisone</b> – a wide and peaceful beach with gravel and sand, perfect for relaxing.
+    </li>
+
+    <li data-lang="it">
+      🏖️ <b>Mazzeo-Letojanni</b> – spiagge di sabbia e atmosfera più “vacanziera”, ideali per chi cerca sia stabilimenti balneari che spiaggia libera.
+    </li>
+    <li data-lang="en" style="display:none;">
+      🏖️ <b>Mazzeo-Letojanni</b> – sandy beaches with a more “holiday” atmosphere, ideal for those looking for both beach clubs and free areas.
+    </li>
+  </ul>
+  <a href="#top" class="top-btn" data-it="⬆️ Torna su" data-en="⬆️ Back to top">⬆️ Torna su</a>
+</section>
+<br>
+
+  <!-- RISTORANTI -->
+
+<section id="ristoranti">
+  <h2 data-lang="it">🍽️ Ristoranti a Taormina</h2>
+  <h2 data-lang="en" style="display:none;">🍽️ Restaurants in Taormina</h2>
+
+  <!-- Pizza e Cucina Informale -->
+  <h3 data-lang="it">🍕 Pizza e Cucina Informale (€ - €€)</h3>
+  <h3 data-lang="en" style="display:none;">🍕 Pizza & Casual Dining (€ - €€)</h3>
+  <ul>
+    <li data-lang="it"><b>Villa Zuccaro</b> – Storica pizzeria con giardino e terrazza.</li>
+    <li data-lang="en" style="display:none;"><b>Villa Zuccaro</b> – Historic pizzeria with garden and terrace.</li>
+
+    <li data-lang="it"><b>La Napoletana</b> – Ottima pizza napoletana, apprezzata anche dai locali.</li>
+    <li data-lang="en" style="display:none;"><b>La Napoletana</b> – Excellent Neapolitan pizza, loved by locals too.</li>
+
+    <li data-lang="it"><b>Casa Ciampoli</b> – Pizzeria in centro in elegante palazzo storico.</li>
+    <li data-lang="en" style="display:none;"><b>Casa Ciampoli</b> – Pizzeria in the center inside a historic palace.</li>
+
+    <li data-lang="it"><b>La Romana</b> – Pizza e piatti internazionali del gruppo Villa Zuccaro.</li>
+    <li data-lang="en" style="display:none;"><b>La Romana</b> – Pizza and international dishes by Villa Zuccaro group.</li>
+  </ul>
+
+  <!-- Cucina Siciliana Tradizionale -->
+  <h3 data-lang="it">🍝 Cucina Siciliana Tradizionale (€€)</h3>
+  <h3 data-lang="en" style="display:none;">🍝 Traditional Sicilian Cuisine (€€)</h3>
+  <ul>
+    <li data-lang="it"><b>Trattoria da Nino</b> – Porzioni generose, vista panoramica, ottimo pesce.</li>
+    <li data-lang="en" style="display:none;"><b>Trattoria da Nino</b> – Generous portions, panoramic view, great seafood.</li>
+
+    <li data-lang="it"><b>Trattoria Don Ciccio</b> – Cucina casalinga e tradizionale siciliana.</li>
+    <li data-lang="en" style="display:none;"><b>Trattoria Don Ciccio</b> – Homestyle, traditional Sicilian cooking.</li>
+
+    <li data-lang="it"><b>Trattoria Tiramisù</b> – Atmosfera familiare, piatti ben fatti e ottimo dolce.</li>
+    <li data-lang="en" style="display:none;"><b>Trattoria Tiramisù</b> – Cozy atmosphere, well-made dishes, excellent dessert.</li>
+
+    <li data-lang="it"><b>Rosmarino</b> – Cucina tipica ma curata, buoni vini e servizio.</li>
+    <li data-lang="en" style="display:none;"><b>Rosmarino</b> – Refined Sicilian cuisine, good wines and service.</li>
+
+    <li data-lang="it"><b>Osteria da Rita</b> – Tra le più amate dai turisti, porzioni abbondanti.</li>
+    <li data-lang="en" style="display:none;"><b>Osteria da Rita</b> – Tourist favorite, generous portions.</li>
+
+    <li data-lang="it"><b>Cutiludissi</b> – Piatti siciliani genuini, ambiente familiare.</li>
+    <li data-lang="en" style="display:none;"><b>Cutiludissi</b> – Authentic Sicilian food, family atmosphere.</li>
+
+    <li data-lang="it"><b>Siculishh</b> – Cucina giovane e creativa, atmosfera urbana.</li>
+    <li data-lang="en" style="display:none;"><b>Siculishh</b> – Young and creative cuisine, urban vibe.</li>
+  </ul>
+
+  <!-- Moderna / Gourmet Accessibile -->
+  <h3 data-lang="it">🧀 Moderna / Gourmet Accessibile (€€ - €€€)</h3>
+  <h3 data-lang="en" style="display:none;">🧀 Modern / Affordable Gourmet (€€ - €€€)</h3>
+  <ul>
+    <li data-lang="it"><b>Adduma</b> – Cucina moderna con radici siciliane.</li>
+    <li data-lang="en" style="display:none;"><b>Adduma</b> – Modern cuisine with Sicilian roots.</li>
+
+    <li data-lang="it"><b>Vineria Modi</b> – Cucina raffinata ma non pretenziosa, ottimi vini.</li>
+    <li data-lang="en" style="display:none;"><b>Vineria Modi</b> – Refined yet unpretentious cuisine, great wines.</li>
+
+    <li data-lang="it"><b>Osteria Villa Zuccaro</b> – Piatti di pesce e carne eleganti, servizio eccellente.</li>
+    <li data-lang="en" style="display:none;"><b>Osteria Villa Zuccaro</b> – Elegant seafood and meat dishes, excellent service.</li>
+  </ul>
+
+  <!-- Alta Cucina -->
+  <h3 data-lang="it">⭐ Alta Cucina / Fine Dining (€€€ - €€€€)</h3>
+  <h3 data-lang="en" style="display:none;">⭐ Fine Dining (€€€ - €€€€)</h3>
+  <ul>
+    <li data-lang="it"><b>Kistè – Easy Gourmet</b> – Cucina siciliana rivisitata da chef Pietro D’Agostino.</li>
+    <li data-lang="en" style="display:none;"><b>Kistè – Easy Gourmet</b> – Sicilian cuisine revisited by Chef Pietro D’Agostino.</li>
+
+    <li data-lang="it"><b>San Michele</b> – Alta cucina elegante, location raffinata.</li>
+    <li data-lang="en" style="display:none;"><b>San Michele</b> – Elegant fine dining, refined location.</li>
+
+    <li data-lang="it"><b>Andreas</b> – Ottima tecnica e ingredienti locali di qualità.</li>
+    <li data-lang="en" style="display:none;"><b>Andreas</b> – Great technique and quality local ingredients.</li>
+
+    <li data-lang="it"><b>Ethica</b> – Cucina sostenibile e creativa, per palati curiosi.</li>
+    <li data-lang="en" style="display:none;"><b>Ethica</b> – Sustainable, creative cuisine for curious palates.</li>
+
+    <li data-lang="it"><b>La Capinera ⭐ Michelin</b> – Cucina di mare raffinata, vista mare. (Spisone, auto necessaria)</li>
+    <li data-lang="en" style="display:none;"><b>La Capinera ⭐ Michelin</b> – Refined seafood cuisine with sea view. (Spisone, car required)</li>
+  </ul>
+
+  <!-- Aperitivi e Dolci -->
+  <h3 data-lang="it">🍷 Aperitivi, Dolci, Extra Consigliati (€ - €€)</h3>
+  <h3 data-lang="en" style="display:none;">🍷 Aperitifs, Desserts & Extras (€ - €€)</h3>
+  <ul>
+    <li data-lang="it"><b>Laboratorio Pasticceria Roberto</b> – Cannoli siciliani famosi, locale informale.</li>
+    <li data-lang="en" style="display:none;"><b>Laboratorio Pasticceria Roberto</b> – Famous Sicilian cannoli in a small informal shop.</li>
+
+    <li data-lang="it"><b>Pasticceria D’Amore</b> – Dolci tipici siciliani e gelato.</li>
+    <li data-lang="en" style="display:none;"><b>Pasticceria D’Amore</b> – Traditional Sicilian desserts and gelato.</li>
+
+    <li data-lang="it"><b>Bam Bar</b> – La granita per eccellenza a Taormina.</li>
+    <li data-lang="en" style="display:none;"><b>Bam Bar</b> – The most famous granita in Taormina.</li>
+
+    <li data-lang="it"><b>Bar Pirandello</b> – Locale informale ma ottima granita.</li>
+    <li data-lang="en" style="display:none;"><b>Bar Pirandello</b> – Informal bar with excellent granita.</li>
+
+    <li data-lang="it"><b>Bar Turrisi (Castelmola)</b> – Taglieri, vini e vista panoramica. Simpaticamente piccante.</li>
+    <li data-lang="en" style="display:none;"><b>Bar Turrisi (Castelmola)</b> – Platters, wines, and panoramic view. Quirky atmosphere.</li>
+
+    <li data-lang="it"><b>Arco Rosso</b> – Bruschettone e aperitivi.</li>
+    <li data-lang="en" style="display:none;"><b>Arco Rosso</b> – Big bruschettas and aperitifs.</li>
+  </ul>
+
+  <!-- Fuori dal centro -->
+  <h3 data-lang="it">🚗 Fuori dal centro storico – Auto consigliata (€€ - €€€)</h3>
+  <h3 data-lang="en" style="display:none;">🚗 Outside the Historic Center – Car Recommended (€€ - €€€)</h3>
+  <ul>
+    <li data-lang="it"><b>Al Saraceno</b> – Ristorante panoramico sulla collina, cucina siciliana.</li>
+    <li data-lang="en" style="display:none;"><b>Al Saraceno</b> – Panoramic hilltop restaurant, Sicilian cuisine.</li>
+
+    <li data-lang="it"><b>Le Tre Vie</b> – Ottimo per carne e cucina autentica, più rustico.</li>
+    <li data-lang="en" style="display:none;"><b>Le Tre Vie</b> – Great for meat and authentic rustic cooking.</li>
+  </ul>
+   <a href="#top" class="top-btn" data-it="⬆️ Torna su" data-en="⬆️ Back to top">⬆️ Torna su</a>
+</section>
+<br>
+
+  <!-- MOBILITA -->
+
+<section id="mobilita">
+  <h2 data-lang="it">🚍 Link utili per la mobilità a Taormina</h2>
+  <h2 data-lang="en" style="display:none;">🚍 Useful Links for Getting Around Taormina</h2>
+
+  <p data-lang="it">
+    Muoversi a Taormina può sembrare complicato a causa delle stradine strette e delle limitazioni al traffico, ma con i giusti mezzi e servizi si può girare comodamente senza stress. Ecco i principali riferimenti:
+  </p>
+  <p data-lang="en" style="display:none;">
+    Getting around Taormina can seem tricky due to the narrow streets and traffic restrictions, but with the right services and transport options you can move around easily and stress-free. Here are the main references:
+  </p>
+
+  <h3 data-lang="it">🚌 Interbus</h3>
+  <h3 data-lang="en" style="display:none;">🚌 Interbus</h3>
+  <p data-lang="it">
+    La compagnia <strong>Interbus</strong> collega Taormina con l’aeroporto di Catania, Giardini Naxos, Messina e molte altre città siciliane. La stazione degli autobus si trova in <em>Via Luigi Pirandello</em>, punto di arrivo e partenza di tutte le linee extraurbane.
+  </p>
+  <p data-lang="en" style="display:none;">
+    The <strong>Interbus</strong> company connects Taormina with Catania Airport, Giardini Naxos, Messina, and many other Sicilian cities. The bus station is located in <em>Via Luigi Pirandello</em>, the arrival and departure point for all intercity lines.
+  </p>
+  <p><a href="https://www.interbus.it" target="_blank">🔗 Interbus Website</a></p>
+
+  <h3 data-lang="it">🚐 ASM Taormina (Servizi Urbani)</h3>
+  <h3 data-lang="en" style="display:none;">🚐 ASM Taormina (Urban Services)</h3>
+  <p data-lang="it">
+    L’azienda <strong>ASM</strong> gestisce i bus urbani di Taormina, molto utili per spostarsi tra il centro storico, i parcheggi principali (Porta Catania, Porta Messina e Lumbi), Mazzarò e Mazzeo. L’azienda gestisce anche i parcheggi e la funivia.
+  </p>
+  <p data-lang="en" style="display:none;">
+    The company <strong>ASM</strong> manages Taormina’s urban buses, very useful for moving between the historic center, the main car parks (Porta Catania, Porta Messina, and Lumbi), Mazzarò, and Mazzeo. ASM also manages parking areas and the cable car.
+  </p>
+  <p><a href="https://www.asmtaormina.com" target="_blank">🔗 ASM Taormina Website</a></p>
+
+  <h3 data-lang="it">🚖 Taxi</h3>
+  <h3 data-lang="en" style="display:none;">🚖 Taxi</h3>
+  <p data-lang="it">
+    I taxi a Taormina si trovano principalmente in <em>Piazza San Pancrazio</em> e vicino ai parcheggi principali. È consigliabile chiedere sempre la tariffa prima della corsa, specialmente per tratte più lunghe (es. aeroporto di Catania o Castelmola).
+  </p>
+  <p data-lang="en" style="display:none;">
+    Taxis in Taormina are mainly located in <em>Piazza San Pancrazio</em> and near the main parking areas. It is always advisable to ask for the fare before the ride, especially for longer trips (e.g. Catania Airport or Castelmola).
+  </p>
+  <p><a href="https://www.vaitaormina.com/taxi-taormina/" target="_blank">🔗 Taxi Taormina</a></p>
+
+  <h3 data-lang="it">🚠 Funivia</h3>
+  <h3 data-lang="en" style="display:none;">🚠 Cable Car</h3>
+  <p data-lang="it">
+    La <strong>funivia di Taormina</strong> collega il centro (Porta Messina) con la baia di Mazzarò in pochi minuti, permettendo un accesso rapido al mare e a Isola Bella. Funziona tutti i giorni con corse frequenti, dalle 7:00 fino a mezzanotte (orari variabili in base alla stagione).
+  </p>
+  <p data-lang="en" style="display:none;">
+    The <strong>Taormina cable car</strong> connects the town center (Porta Messina) with Mazzarò Bay in just a few minutes, giving fast access to the sea and Isola Bella. It runs daily with frequent trips, from 7:00 am until midnight (hours vary by season).
+  </p>
+  <p><a href="https://www.asmtaormina.com/funivia-mazzaro-taormina/" target="_blank">🔗 Cable Car Info (ASM)</a></p>
+
+  <h3 data-lang="it">🅿️ Parcheggi</h3>
+  <h3 data-lang="en" style="display:none;">🅿️ Parking</h3>
+  <p data-lang="it">
+    Per accedere al centro storico è necessario lasciare l’auto in uno dei grandi parcheggi multipiano collegati da ascensori e bus navetta:
+  </p>
+  <p data-lang="en" style="display:none;">
+    To access the historic center, you need to leave your car in one of the large multi-story car parks, connected by elevators and shuttle buses:
+  </p>
+  <ul>
+    <li data-lang="it"><strong>Parcheggio Porta Catania</strong> – il più comodo per entrare direttamente su Corso Umberto (consigliato).</li>
+    <li data-lang="en" style="display:none;"><strong>Porta Catania Car Park</strong> – the most convenient for direct access to Corso Umberto (recommended).</li>
+
+    <li data-lang="it"><strong>Parcheggio Lumbi</strong> – grande e collegato al centro da bus navetta.</li>
+    <li data-lang="en" style="display:none;"><strong>Lumbi Car Park</strong> – large, connected to the center by shuttle buses.</li>
+
+    <li data-lang="it"><strong>Parcheggio Porta Messina</strong> – comodo per chi entra dal lato nord del centro storico.</li>
+    <li data-lang="en" style="display:none;"><strong>Porta Messina Car Park</strong> – convenient for those entering from the north side of the historic center.</li>
+  </ul>
+  <p><a href="https://www.asmtaormina.com/parcheggi-taormina/" target="_blank">🔗 Parking Info (ASM)</a></p>
+
+  <p data-lang="it">
+    👉 Consiglio: evita di entrare in auto nel centro storico, le ZTL e le stradine strette rendono complicata la guida. Meglio lasciare l’auto nei parcheggi e muoversi a piedi, in bus o con la funivia.
+  </p>
+  <p data-lang="en" style="display:none;">
+    👉 Tip: avoid driving into the historic center, as ZTL zones and narrow streets make driving difficult. It’s better to leave your car in the car parks and move around on foot, by bus, or using the cable car.
+  </p>
+   <a href="#top" class="top-btn" data-it="⬆️ Torna su" data-en="⬆️ Back to top">⬆️ Torna su</a>
+</section>
+<br>
+
+  <!-- VICINANZE -->
+
+<section id="vicinanze">
+  <h2 data-lang="it">🏡 Vicinanze</h2>
+  <h2 data-lang="en" style="display:none;">🏡 Nearby</h2>
+
+  <p data-lang="it">
+    Ecco alcuni luoghi utili e piacevoli che puoi trovare a pochi passi dalla <strong>Blue Starfish Holiday Home</strong>:
+  </p>
+  <p data-lang="en" style="display:none;">
+    Here are some useful and enjoyable places just a short walk from the <strong>Blue Starfish Holiday Home</strong>:
+  </p>
+
+  <ul>
+    <li data-lang="it">
+      <strong>☕ Bar Andromaco</strong><br>
+      Ottimo per iniziare la giornata con una dolce colazione: offre granite, gelati, croissant e ottimi caffè in un ambiente tranquillo.<br>
+      <a href="https://maps.app.goo.gl/f8TfGtCNHZ4PW9B46?g_st=ipc" target="_blank">📍 Vedi su Google Maps</a>
+    </li>
+    <li data-lang="en" style="display:none;">
+      <strong>☕ Bar Andromaco</strong><br>
+      Perfect for starting the day with a sweet breakfast: granita, ice cream, croissants, and great coffee in a quiet atmosphere.<br>
+      <a href="https://maps.app.goo.gl/f8TfGtCNHZ4PW9B46?g_st=ipc" target="_blank">📍 View on Google Maps</a>
+    </li>
+
+    <li data-lang="it">
+      <strong>🍰 Bar Luraleo</strong><br>
+      Situato vicino a Porta Catania, questo bar-pasticceria è l'ideale per gustare un buon espresso, brioche, cannoli, gelato artigianale e persino cocktail in terrazza con vista.<br>
+      <a href="https://maps.app.goo.gl/sJQUKeAW3pxoJUjs6?g_st=ipc" target="_blank">📍 Vedi su Google Maps</a>
+    </li>
+    <li data-lang="en" style="display:none;">
+      <strong>🍰 Bar Luraleo</strong><br>
+      Located near Porta Catania, this café-pastry shop is ideal for enjoying espresso, brioche, cannoli, artisan gelato, and even cocktails on a terrace with a view.<br>
+      <a href="https://maps.app.goo.gl/sJQUKeAW3pxoJUjs6?g_st=ipc" target="_blank">📍 View on Google Maps</a>
+    </li>
+
+    <li data-lang="it">
+      <strong>🛍️ Terra e Mare – Bottega Agroalimentare</strong><br>
+      Bottega di prodotti locali con cucina.<br>
+      <a href="https://maps.app.goo.gl/kxBHu9LvArfdateh6?g_st=ipc" target="_blank">📍 Vedi su Google Maps</a>
+    </li>
+    <li data-lang="en" style="display:none;">
+      <strong>🛍️ Terra e Mare – Food Shop</strong><br>
+      Shop of local products with a small kitchen.<br>
+      <a href="https://maps.app.goo.gl/kxBHu9LvArfdateh6?g_st=ipc" target="_blank">📍 View on Google Maps</a>
+    </li>
+
+    <li data-lang="it">
+      <strong>🥟 Da Cristina (Rosticceria - Tavola Calda)</strong><br>
+      Dal 1980 offre specialità di rosticceria siciliana e tavola calda: pizza al taglio, arancini, piatti caserecci. Perfetto per un pranzo veloce e gustoso a prezzi onesti.<br>
+      <a href="https://maps.app.goo.gl/mrZ6Cvzuz5Xz44SZ9?g_st=iw" target="_blank">📍 Vedi su Google Maps</a>
+    </li>
+    <li data-lang="en" style="display:none;">
+      <strong>🥟 Da Cristina (Rosticceria - Tavern)</strong><br>
+      Since 1980 offering Sicilian street food and hot dishes: pizza by the slice, arancini, homemade meals. Perfect for a quick and tasty lunch at fair prices.<br>
+      <a href="https://maps.app.goo.gl/mrZ6Cvzuz5Xz44SZ9?g_st=iw" target="_blank">📍 View on Google Maps</a>
+    </li>
+
+    <li data-lang="it">
+      <strong>🥩 Macelleria Ragusa</strong><br>
+      Piccola macelleria a conduzione familiare.<br>
+      <a href="https://maps.app.goo.gl/RUVUb9afc4Xco6QZ6?g_st=ipc" target="_blank">📍 Vedi su Google Maps</a>
+    </li>
+    <li data-lang="en" style="display:none;">
+      <strong>🥩 Ragusa Butcher Shop</strong><br>
+      Small family-run butcher shop.<br>
+      <a href="https://maps.app.goo.gl/RUVUb9afc4Xco6QZ6?g_st=ipc" target="_blank">📍 View on Google Maps</a>
+    </li>
+
+    <li data-lang="it">
+      <strong>🛒 Supermercato Decó</strong><br>
+      Un piccolo supermercato ben fornito di tutto il necessario e prodotti locali.<br>
+      <a href="https://maps.app.goo.gl/aAZtnruwnPdUH9UCA?g_st=iw" target="_blank">📍 Vedi su Google Maps</a>
+    </li>
+    <li data-lang="en" style="display:none;">
+      <strong>🛒 Decó Supermarket</strong><br>
+      A small but well-stocked supermarket with all essentials and local products.<br>
+      <a href="https://maps.app.goo.gl/aAZtnruwnPdUH9UCA?g_st=iw" target="_blank">📍 View on Google Maps</a>
+    </li>
+  </ul>
+  <a href="#top" class="top-btn" data-it="⬆️ Torna su" data-en="⬆️ Back to top">⬆️ Torna su</a>
+</section>
+<br>
+
+ <!-- INFORMAZIONI -->
+<section id="info">
+  <h2>
+    <span data-lang="it">ℹ️ Info utili</span>
+    <span data-lang="en" style="display:none;">ℹ️ Useful Info</span>
+  </h2>
+
+  <p>
+    <span data-lang="it">Durante il tuo soggiorno ti chiediamo di rispettare alcune semplici regole per rendere l’esperienza piacevole e sostenibile.</span>
+    <span data-lang="en" style="display:none;">During your stay we kindly ask you to follow a few simple rules to make the experience pleasant and sustainable.</span>
+  </p>
+
+  <h3>
+    <span data-lang="it">♻️ Raccolta differenziata</span>
+    <span data-lang="en" style="display:none;">♻️ Recycling</span>
+  </h3>
+  <p>
+    <span data-lang="it">Ti invitiamo a fare sempre la raccolta differenziata. Consulta il calendario aggiornato del Comune di Taormina (varia in base alla stagione):</span>
+    <span data-lang="en" style="display:none;">We kindly ask you to always separate waste. Please check the updated collection calendar of the Municipality of Taormina (varies by season):</span>
+  </p>
+  <p>
+    <a href="https://taormina.comune.digital/calendario" target="_blank">
+      <span data-lang="it">🔗 Calendario raccolta rifiuti</span>
+      <span data-lang="en" style="display:none;">🔗 Waste collection calendar</span>
+    </a>
+  </p>
+
+  <h3>
+    <span data-lang="it">💧 Condizionatori</span>
+    <span data-lang="en" style="display:none;">💧 Air Conditioners</span>
+  </h3>
+  <p>
+    <span data-lang="it">Ricordati di svuotare periodicamente i contenitori di raccolta della condensa dei climatizzatori per evitare traboccamenti.</span>
+    <span data-lang="en" style="display:none;">Please remember to periodically empty the condensate collection containers of the air conditioners to avoid overflow.</span>
+  </p>
+
+  <h3>
+    <span data-lang="it">⏰ Checkout</span>
+    <span data-lang="en" style="display:none;">⏰ Checkout</span>
+  </h3>
+  <p>
+    <span data-lang="it">Il giorno della partenza ti ricordiamo che il checkout è entro le ore 10:00. Grazie per la collaborazione!</span>
+    <span data-lang="en" style="display:none;">On departure day, please remember that checkout is by 10:00 AM. Thank you for your cooperation!</span>
+  </p>
+
+  <a href="#top" class="back-to-top">
+    <span data-lang="it">⬆️ Torna su</span>
+    <span data-lang="en" style="display:none;">⬆️ Back to top</span>
+  </a>
+</section>
+<br>
+
+  <!-- CONTATTI -->
+  <section id="contatti">
+    <h2 data-it="📞 Contatti" data-en="📞 Contacts">📞 Contatti</h2>
+    <ul>
+      <li>
+        <strong>📍 <span data-it="Indirizzo" data-en="Address">Indirizzo</span>:</strong> 
+        <a href="https://maps.app.goo.gl/sAtkVp1TrAqpsa5q8" target="_blank">
+          Via Otto Geleng, 12 – 2° piano, 98039 Taormina
+        </a>
+      </li>
+      <li><strong>📧 Email:</strong> <a href="mailto:bluestarfishtaormina@gmail.com">bluestarfishtaormina@gmail.com</a></li>
+      <li><strong>📞 Tel:</strong> <a href="tel:+393382204613">+39 338 220 4613</a></li>
+    </ul>
+    <a href="#top" class="top-btn" data-it="⬆️ Torna su" data-en="⬆️ Back to top">⬆️ Torna su</a>
+  </section>
+<br>
+
+<!-- SCRIPT -->
+
+  <script>
+  let currentLang = 'it';
+  function toggleLanguage() {
+    currentLang = currentLang === 'it' ? 'en' : 'it';
+    
+    // Mostra/nasconde tutti gli elementi
+    document.querySelectorAll('[data-lang]').forEach(el => {
+      if (el.getAttribute('data-lang') === currentLang) {
+        el.style.display = '';
+      } else {
+        el.style.display = 'none';
+      }
+    });
+
+    // Aggiorna bottone
+    const btn = document.querySelector('.lang-toggle button');
+    btn.innerHTML = currentLang === 'it' ? '🇮🇹 Italiano' : '🇬🇧 English';
+  }
+</script>
